@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Разрабыч — демонстрационный сайт</title>
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap-grid.min.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font.css">
+    <style>
+        .demo-banner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 10px 16px;
+            background: #2A1B4A;
+            color: #ffffff;
+            font-family: "Faber Sans Pro", sans-serif;
+            font-size: 14px;
+            text-align: center;
+        }
+        .demo-banner__label {
+            opacity: 0.85;
+        }
+        .demo-banner a {
+            color: #FFD928;
+            font-weight: 700;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255, 217, 40, 0.5);
+        }
+        .demo-banner a:hover {
+            border-bottom-color: #FFD928;
+        }
+    </style>
+</head>
+<body>
+
+<div class="demo-banner">
+    <span class="demo-banner__label">Это демонстрационный сайт — пример вёрстки.</span>
+    <a href="https://razrabych.ru" target="_blank" rel="noopener">Заказать такой сайт →</a>
+</div>
+
+<section class="header">
+
+    <div class="header_main">
+
+    <div class="header_left">
+        <div class="header_left-logo">
+            <img src="icons/image-10.png" alt="" class="logo_img">
+        </div>
+        <div class="header_left-description">
+            продуктивный подход <br>
+            к обучению детей
+        </div>
+    </div>
+
+    <div class="header_right">
+        <a href="https://razrabych.ru" target="_blank" rel="noopener" class="phone_number">+ 7 212 342 39 49</a>
+        <button class="button_call"> <img src="icons/phone.svg" alt="tel" class="phone_logo"> <div class="btn_text">Заказать звонок</div></button>
+    </div>
+    </div><!-- header_main -->
+
+</section>
+
+<section class="promo">
+    <div class="promo_container">
+        <h1 class="promo_header txt_header hideormin1200">
+            [название] - продуктивный подход к обучению детей
+        </h1>
+
+        <div class="promo_description txt_description hideormin1200">
+    Книга + мобильное приложение + онлайн-школа <br> работают как единая система для развития речи, <br>
+    ума и навыков общения
+        </div>
+        <h2 class="promo_header txt_header hideorbig1200">
+            [название] - продуктивный подход к обучению детей
+            от 3 до 7 лет
+        </h2>
+        <div class="promo_description txt_description hideorbig1200">
+    Книга + мобильное приложение + <br class ="brbig375"> онлайн-школа  работают <br class ="br375"> как единая система <br class ="brbig375"> для развития речи,
+    ума и навыков общения
+        </div>
+        <img src="img/kids 3.png" alt="kids" class="promo_img">
+        <div class="promo_form ">
+            <div class="promo_form_tel">
+                <img src="icons/smartphone .svg" alt="" class="promo_form_tel_img">
+                <input type="tel" id="phone" name="phone" class="promo_form_tel_input" placeholder="+7"  required>
+            </div>
+            <input type="submit" value="Получить демо-доступ" class="promo_form_button">
+        </div>
+
+        <div class="promo_advantages">
+            <div class="promo_advantages_item">
+                <img src="icons/1screen/house (11) 1.svg" alt="" class="promo_advantages_item_img">
+                <div class="promo_advantages_item_text hideormin1200">
+                    Домашняя альтернатива <br>
+                    детским центрам
+                </div>
+                <div class="promo_advantages_item_text hideorbig1200">
+                    Домашняя альтернатива
+                    детским центрам
+                </div>
+            </div>
+            <div class="promo_advantages_item">
+                <img src="icons/1screen/magic-wand (2) 1.svg" alt="" class="promo_advantages_item_img">
+                <div class="promo_advantages_item_text">
+                    Простое применение
+                </div>
+            </div>
+            <div class="promo_advantages_item">
+                <img src="icons/1screen/calendar (21) 1.svg" alt="" class="promo_advantages_item_img">
+                <div class="promo_advantages_item_text">
+                    33 занятия за 2 месяца
+                </div>
+            </div>
+
+            <div class="promo_advantages_item">
+                <img src="icons/1screen/video 1.svg" alt="" class="promo_advantages_item_img">
+                <div class="promo_advantages_item_text">
+                    Результат с первого урока
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<section class="books hideormin1200">
+
+    <div class="books_container">
+        <h2 class="books_header txt_header2">
+            Откройте ребенку радость увлекательного
+            развития без скуки и стресса
+        </h2>
+       <div class="books_image_block ">
+        <img src="img/mats.png" alt="" class="books_img">
+        <div class="books_image_block_items hideormin1200">
+            <div class="books_image_block_item ">Комплект включает печатные материалы, мобильное приложение и доступ к онлайн- школе — занятия проходят сразу в нескольких форматах
+            </div>
+            <div class="books_image_block_item ">Программа состоит
+                из 33 уроков и рассчитана
+                в среднем на 2 месяца, однако скорость прохождения у разных
+                детей отличается
+                </div>
+        </div>
+       </div>
+
+       <div class="books_left">
+        <div class="books_description_1 books_description">
+            Практическое пособие [название] создано
+            для домашнего обучения детей чтению, письму,
+             мышлению и другим навыкам
+        </div>
+
+            <div class="books_advantages">
+
+                <div class="books_advantages_item">Методика разработана специалистами по детскому развитию, поэтому эффективна
+                    и безопасна
+
+                    </div>
+                <div class="books_advantages_item">Задания продуманы таким образом, чтобы принести ребенку максимум пользы
+                    и удовольствия
+                    </div>
+            </div>
+            <div class="books_description_2 books_description">
+                Вы получите материалы с подробными инструкциями —  просто следуйте рекомендациям, и все пройдет отлично
+            </div>
+       </div>
+    </div>
+</section>
+
+
+<section class="books_small hideorbig1200">
+    <div class="books_small_container">
+        <h2 class="books_small_header ">
+            Откройте ребенку радость увлекательного
+            развития без скуки и стресса
+        </h2>
+
+        <div class="books_small_description ">
+            Практическое пособие [название] создано
+            для домашнего обучения детей чтению, письму,
+             мышлению и другим навыкам
+        </div>
+        <img src="img/mats.png" alt="" class="books_small_img">
+
+        <div class="books_small_advantages">
+            <div class="books_small_advantages_item ">Комплект включает печатные материалы, мобильное приложение и доступ к онлайн- школе — занятия проходят сразу в нескольких форматах
+            </div>
+            <div class="books_small_advantages_item ">Программа состоит
+                из 33 уроков и рассчитана
+                в среднем на 2 месяца, однако скорость прохождения у разных
+                детей отличается
+            </div>
+
+            <div class="books_small_advantages_item">Методика разработана специалистами по детскому развитию, поэтому эффективна
+                и безопасна
+            </div>
+            <div class="books_small_advantages_item">Задания продуманы таким образом, чтобы принести ребенку максимум пользы
+                и удовольствия
+            </div>
+
+        </div>
+
+        <div class="books_small_description books_small_description_2">
+            Вы получите материалы с подробными инструкциями —  просто следуйте рекомендациям, и все пройдет отлично
+        </div>
+    </div>
+</section>
+
+<section class="advantages">
+    <h2 class="advantages_header ">
+        Занимайтесь с удовольствием и достигайте новых вершин
+        следующие 2 месяца и всю жизнь
+    </h2>
+    <div class="advantages_description">
+        [название] — это комплексная программа, помогающая получить положительные результаты сразу в нескольких сферах
+    </div>
+
+    <div class="advantages_items">
+        <div class="advantages_items_item">
+            <img src="img/advantages/1Brain.svg" alt="" class="advantages_items_item_img">
+            <div class="advantages_items_item_text">Равномерное развитие обоих полушарий
+                мозга и межполушарных связей</div>
+        </div>
+        <div class="advantages_items_item">
+            <img src="img/advantages/2Brain.svg" alt="" class="advantages_items_item_img">
+            <div class="advantages_items_item_text">Укрепление памяти
+                и внимания</div>
+        </div>
+        <div class="advantages_items_item">
+            <img src="img/advantages/3baby.svg" alt="" class="advantages_items_item_img">
+            <div class="advantages_items_item_text">Развитие мышления
+                и познавательного интереса</div>
+        </div>
+        <div class="advantages_items_item">
+            <img src="img/advantages/4Orig.svg" alt="" class="advantages_items_item_img">
+            <div class="advantages_items_item_text">Раскрытие творческих
+                способностей</div>
+        </div>
+        <div class="advantages_items_item">
+            <img src="img/advantages/5moms.svg" alt="" class="advantages_items_item_img">
+            <div class="advantages_items_item_text">Налаживание эмоциональных
+                связей с родителями</div>
+        </div>
+        <div class="advantages_items_item">
+            <img src="img/advantages/6climb.svg" alt="" class="advantages_items_item_img">
+            <div class="advantages_items_item_text">Повышение
+                самостоятельности</div>
+        </div>
+
+    </div>
+</section>
+
+<section class="kids">
+    <div class="kids_container">
+        <img src="img/kids2 2.png" alt="" class="kids_img hideormin1200">
+        <div class="kids_block">
+        <h2 class="kids_header">Гармония традиционных методик
+            и новейших возможностей педагогики </h2>
+        <div class="kids_description">Практическое пособие [название] совмещает офлайн и онлайн-занятия. Ребенок привыкает учиться в нескольких форматах:
+        </div>
+        <img src="img/kids2 3.png" alt="" class="kids_img_container hideorbig1200">
+
+        <div class="kids_items">
+            <div class="kids_items_item">
+               <img src="icons/kids/video 1.svg" alt="" class="kids_items_item_img">
+                <div class="kids_items_item_text">Читать и писать с помощью красивых книг, прописей, карточек</div>
+            </div>
+
+            <div class="kids_items_item">
+                <img src="icons/kids/app 1.svg" alt="" class="kids_items_item_img">
+                 <div class="kids_items_item_text">Слушать, запоминать
+                    и играть в мобильном
+                    приложении
+                    </div>
+             </div>
+        </div>
+        <div class="kids_description kids_description_2">Разные варианты работы поддерживают интерес ребенка к занятиям и взаимно усиливают друг друга, что помогает учиться без скуки и развиваться гармонично. </div>
+        </div>
+    </div>
+</section>
+
+<section class="form">
+    <div class="form_container">
+    <h2 class="form_title">
+                33 занятия — и ваш ребенок
+        на <span class="form_title_yellow">новом уровне</span> знаний
+    </h2>
+
+    <div class="form_description">
+        Учитесь без скуки и стресса с [название]
+    </div>
+
+    <div class="form_forms">
+        <div class="form_forms_item">
+            <div class="form_forms_item_description">Ваше имя</div>
+            <input type="name" id="name" name="name" class="form_forms_item_input" placeholder="Александр"  required>
+        </div>
+
+        <div class="form_forms_item">
+                <div class="form_forms_item_description">Ваш телефон</div>
+                <input type="tel" id="phone" name="phone" class="form_forms_item_input" placeholder="+7"  required>
+        </div>
+    </div>
+
+    <div class="form_submit">
+        <div class="form_submit_allert">
+            <img src="icons/check (36) 1.svg" alt="" class="form_submit_allert_img">
+            <div class="form_submit_allert_text">Нажимая на кнопку, Вы даёте согласие
+                на обработку персональных данных</div>
+        </div>
+        <input type="submit" value="Узнать стоимость" class="form_submit_button">
+    </div>
+
+    <div class="form_images ">
+        <img src="img/forms/Group_form1.svg" alt="" class="form_images_bg">
+        <img src="img/forms/kid1 .png" alt="" class="form_images_img">
+    </div>
+    </div>
+</section>
+
+<section class="benefits">
+
+    <div class="benefits_container">
+        <h2 class="benefits_header">
+            Полный арсенал развивающих инструментов
+            в вашем смартфоне
+        </h2>
+        <div class="benefits_description">Часть заданий и полезной информации для родителей доступна
+            в мобильном приложении. Оно включает: </div>
+
+        <div class="benefits_items">
+            <div class="benefits_items_item">
+                <div class="benefits_items_item_img_container">
+                <img src="icons/benefits/table (3) 1.svg" alt="" class="benefits_items_item_img">
+                </div>
+
+                <div class="benefits_items_item_text">Карты развития ФГОС — перечни умений и навыков детей в разном возрасте и бланки для личных заметок — просто введите возраст ребенка, и приложение покажет, что он уже
+                    должен уметь. </div>
+            </div>
+            <div class="benefits_items_item">
+                <div class="benefits_items_item_img_container">
+                    <img src="icons/benefits/puzzle (1) 1.svg" alt="" class="benefits_items_item_img">
+                </div>
+
+                <div class="benefits_items_item_text">Мультфильмы и мини-игры
+                    с элементами дополненной реальности для вовлечения в образовательный процесс. </div>
+            </div>
+            <div class="benefits_items_item">
+                <div class="benefits_items_item_img_container">
+                    <img src="icons/benefits/tv 1.svg" alt="" class="benefits_items_item_img">
+
+                </div>
+
+                <div class="benefits_items_item_text">Видеоуроки с подробными инструкциями по выполнению физических и логопедических упражнений. </div>
+            </div>
+            <div class="benefits_items_item">
+                <div class="benefits_items_item_img_container">
+                    <img src="icons/benefits/chat-bubble (9) 1.svg" alt="" class="benefits_items_item_img">
+                </div>
+
+                <div class="benefits_items_item_text">Чат со специалистами
+                    для оперативной поддержки
+                    и личных консультаций</div>
+            </div>
+        </div>
+
+        <div class="benefits_description_mini">
+            Приложение удобно и интуитивно понятно.
+            Все получится, даже если вы впервые пробуете такой формат обучения.
+        </div>
+
+        <input type="submit" value="Получить демо-доступ" class="benefits_button">
+
+    </div>
+</section>
+<section class="instructions">
+    <div class="instructions_container">
+        <h2 class="instructions_header hideorbig1200">Пошаговые инструкции
+            и обратная связь от экспертов </h2>
+        <img src="img/dialog.jpeg" alt="" class="instructions_img">
+        <div class="instructions_text">
+            <h2 class="instructions_text_header hideormin1200">Пошаговые инструкции
+                и обратная связь от экспертов</h2>
+            <div class="instructions_text_description">В обучающую методику интегрирована онлайн-школа [название].
+                С первого дня вы получите доступ к пошаговым инструкциям
+                по домашнему обучению в целом и отдельным занятиям
+                в частности. Полезные советы и видеоинструкции
+                упростят обучение ребенка. <br><br>
+
+                В онлайн-школе вы будете получать от педагогов обратную связь по прогрессу, проверку домашних заданий
+                и персональные рекомендации.
+                </div>
+        </div>
+    </div>
+</section>
+
+<section class="lion">
+    <div class="lion_container">
+        <h2 class="lion_header hideorbig1200">Исследуйте мир
+            в дополненной реальности  </h2>
+        <img src="img/lion.png" alt="" class="lion_img ">
+        <div class="lion_text">
+            <h2 class="lion_text_header hideormin1200">Исследуйте мир
+                в дополненной реальности </h2>
+            <div class="lion_text_description">С помощью фигурок героев и моделей [название] ребенок запомнит животных, углубит знания о природе и планете, а также разовьет мелкую моторику рук.
+                <br> <br>
+                Яркие впечатления малышу подарят игры с элементами дополненной реальности: интересные персонажи
+                и звери оживут на экране телефона. Ассоциативные мультфильмы помогут детям вовлечься
+                в образовательный процесс и научиться
+                мыслить по-новому.
+
+                </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="form form_green">
+    <div class="form_container">
+    <h2 class="form_title">
+        <span class="form_title_yellow">Современный</span>  подход
+        к дошкольному образованию
+
+    </h2>
+
+    <div class="form_description">
+        Покажите ребенку, что учиться — это весело
+    </div>
+
+    <div class="form_forms">
+        <div class="form_forms_item">
+            <div class="form_forms_item_description">Ваше имя</div>
+            <input type="name" id="name" name="name" class="form_forms_item_input" placeholder="Александр"  required>
+        </div>
+
+        <div class="form_forms_item">
+                <div class="form_forms_item_description">Ваш телефон</div>
+                <input type="tel" id="phone" name="phone" class="form_forms_item_input" placeholder="+7"  required>
+        </div>
+    </div>
+
+    <div class="form_submit">
+        <div class="form_submit_allert">
+            <img src="icons/check (36) 1.svg" alt="" class="form_submit_allert_img">
+            <div class="form_submit_allert_text">Нажимая на кнопку, Вы даёте согласие
+                на обработку персональных данных</div>
+        </div>
+        <input type="submit" value="Узнать стоимость" class="form_submit_button form_submit_button_2">
+    </div>
+
+    <div class="form_images form_images_2">
+        <img src="img/forms/Group_form2.svg" alt="" class="form_images_bg form_images_bg_2">
+        <img src="img/forms/kid2 .png" alt="" class="form_images_img form_images_img_2">
+    </div>
+    </div>
+</section>
+
+<section class="potential">
+    <div class="potential_container">
+        <img src="img/wom 1.png" alt="" class="potential_img">
+        <div class="potential_text">
+            <h2 class="potential_text_header">Раскройте
+                педагогический
+                потенциал </h2>
+            <div class="potential_text_description">
+                [название] развивается и создает инновационные обучающие программы для детей, поэтому мы открыты для сотрудничества с новыми авторами.
+                <br><br>
+                <span class="potential_text_description_bold">Если вы активный родитель, специалист в этой области
+                    или просто располагаете хорошей идеей, обратитесь к нам.</span>
+     Вместе мы сделаем дошкольное образование еще интереснее — приходите сами и приводите друзей.
+            </div>
+            <button class="potential_btn">Стать автором</button>
+        </div>
+    </div>
+</section>
+
+<section class="optimal">
+    <div class="optimal_container">
+        <h2 class="optimal_header">Оптимальное решение для тех, кто выбирает
+            счастливое будущее </h2>
+        <div class="optimal_items">
+
+            <div class="optimal_items_item">
+                <div class="optimal_items_item_head">
+                    <img src="icons/optimal/calendar (23) 1.svg" alt="" class="optimal_items_item_head_img">
+                    <div class="optimal_items_item_head_text">Гибкий график </div>
+                </div>
+                <div class="optimal_items_item_description">Комплекс позволяет заниматься с ребенком, когда удобно вам, без привязки к расписанию детского центра или специалиста. </div>
+            </div>
+
+            <div class="optimal_items_item">
+                <div class="optimal_items_item_head">
+                    <img src="icons/optimal/smartphone (32) 1.svg" alt="" class="optimal_items_item_head_img">
+                    <div class="optimal_items_item_head_text">Дистанционное
+                        обучение</div>
+                </div>
+                <div class="optimal_items_item_description">Занимайтесь дома и в поездках — нужны только печатные материалы и смартфон. </div>
+            </div>
+
+            <div class="optimal_items_item">
+                <div class="optimal_items_item_head">
+                    <img src="icons/optimal/shapes 1.svg" alt="" class="optimal_items_item_head_img">
+                    <div class="optimal_items_item_head_text">Персональная
+                        программа</div>
+                </div>
+                <div class="optimal_items_item_description">Уроки легко адаптировать под вашего малыша — возраст, характер, уровень знаний и даже настроение. </div>
+            </div>
+
+            <div class="optimal_items_item">
+                <div class="optimal_items_item_head">
+                    <img src="icons/optimal/baby-boy 1.svg" alt="" class="optimal_items_item_head_img">
+                    <div class="optimal_items_item_head_text">Для детей
+                        с особенностями развития</div>
+                </div>
+                <div class="optimal_items_item_description">Программа подходит малышам
+                    с ЗРР, ЗПР и СДВГ</div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+
+<section class="form form_red">
+    <div class="form_container">
+    <h2 class="form_title">
+        <span class="form_title_yellow">Откройте мир</span> знаний
+        своему ребенку
+    </h2>
+
+    <div class="form_description">
+        Пусть старт в образовании пройдет без стресса и скуки
+    </div>
+
+    <div class="form_forms">
+        <div class="form_forms_item">
+            <div class="form_forms_item_description">Ваше имя</div>
+            <input type="name" id="name" name="name" class="form_forms_item_input" placeholder="Александр"  required>
+        </div>
+
+        <div class="form_forms_item">
+                <div class="form_forms_item_description">Ваш телефон</div>
+                <input type="tel" id="phone" name="phone" class="form_forms_item_input" placeholder="+7"  required>
+        </div>
+    </div>
+
+    <div class="form_submit">
+        <div class="form_submit_allert">
+            <img src="icons/check (36) 1.svg" alt="" class="form_submit_allert_img">
+            <div class="form_submit_allert_text">Нажимая на кнопку, Вы даёте согласие
+                на обработку персональных данных</div>
+        </div>
+        <input type="submit" value="Узнать стоимость" class="form_submit_button form_submit_button_3">
+    </div>
+
+    <div class="form_images form_images_3">
+        <img src="img/forms/Group_form3.svg" alt="" class="form_images_bg form_images_bg_3">
+        <img src="img/forms/kid3.png" alt="" class="form_images_img form_images_img_3">
+    </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer_container">
+        <div class="footer_text">
+            <div class="footer_text_item">Демонстрационный сайт [название]</div>
+            <div class="footer_text_item">Пример вёрстки от студии <a href="https://razrabych.ru" target="_blank" rel="noopener">razrabych.ru</a></div>
+        </div>
+
+        <ul class="footer-logos">
+<!--            <li class="footer-logos-item"> <a href="https://razrabych.ru" target="_blank" rel="noopener" class="footer-logos-item-link footer-logos-item-link_1">ggg</a> </li>-->
+            <li class="footer-logos-item"><a href="https://razrabych.ru" target="_blank" rel="noopener" class="footer-logos-item-link footer-logos-item-link_2">ggg</a> </li>
+<!--            <li class="footer-logos-item"><a href="https://razrabych.ru" target="_blank" rel="noopener" class="footer-logos-item-link footer-logos-item-link_3">ggg</a> </li>-->
+            <li class="footer-logos-item "><a href="https://razrabych.ru" target="_blank" rel="noopener" class="footer-logos-item-link footer-logos-item-link_4">ggg</a> </li>
+            <li class="footer-logos-item "><a href="https://razrabych.ru" target="_blank" rel="noopener" class="footer-logos-item-link footer-logos-item-link_5">ggg</a> </li>
+            <li class="footer-logos-item "><a href="https://razrabych.ru" target="_blank" rel="noopener" class="footer-logos-item-link footer-logos-item-link_6">ggg</a> </li>
+            <li class="footer-logos-item "><a href="https://razrabych.ru" target="_blank" rel="noopener" class="footer-logos-item-link footer-logos-item-link_7">ggg</a> </li>
+
+        </ul>
+    </div>
+</footer>
+</body>
+<script  src="js/script.js"></script>
+
+</html>

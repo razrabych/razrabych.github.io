@@ -1,0 +1,119 @@
+// =============================================================
+//  Шапка
+// =============================================================
+
+@use 'mixins' as *;
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: var(--bg);
+  border-bottom: 1px solid var(--border-soft);
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+
+    @include tablet {
+      height: 72px;
+    }
+
+    @include desktop {
+      height: 76px;
+    }
+  }
+
+  &__logo img {
+    width: auto;
+    height: 32px;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .btn {
+      display: none;
+
+      @include tablet {
+        display: inline-flex;
+      }
+    }
+  }
+
+  &__burger {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text);
+
+    .icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    @include tablet {
+      display: none;
+    }
+  }
+}
+
+// Навигация
+.site-nav {
+  display: none;
+
+  &.is-open {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--bg);
+    border-bottom: 1px solid var(--border-soft);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 20px;
+
+    @include tablet {
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+      padding: 0;
+    }
+
+    @include desktop {
+      gap: 32px;
+    }
+  }
+
+  &__link {
+    color: var(--text2);
+    font-size: 15px;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: var(--text);
+    }
+
+    @include tablet {
+      font-size: 14px;
+    }
+
+    @include desktop {
+      font-size: 15px;
+    }
+  }
+
+  @include tablet {
+    display: block;
+    position: static;
+  }
+}

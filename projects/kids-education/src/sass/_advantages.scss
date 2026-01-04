@@ -1,0 +1,106 @@
+@media (min-width: 768px) and (max-width:1199px) {
+    
+};
+@media (max-width: 767px) and (min-width: 200px) {
+    
+};
+
+
+.advantages{
+    background-color: #F5F4FF;
+    padding-top: 93px;
+    overflow: visible;
+    &_header{
+        color: #2D2D2D;
+        text-align: center;
+        font-family: "Directo";
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 50px;
+        margin: 0 auto;
+        width: 1054px;
+        @media (min-width: 768px) and (max-width:1199px) {
+            font-size: 32px;
+            line-height: 46px; 
+            width: 738px;
+        };
+        @media (max-width: 767px) and (min-width: 200px) {
+            font-size: 22px;
+            line-height: 32px;
+            width: 345px;
+        };
+    }
+    &_description{
+        color: #6D698C;
+        text-align: center;
+        font-family: "Faber Sans Pro";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        width: 738px;
+        margin: 0 auto;
+        margin-top: 24px;
+
+        @media (min-width: 768px) and (max-width:1199px) {
+            margin-top: 20px;
+            width: 586px;
+        };
+        @media (max-width: 767px) and (min-width: 200px) {
+            font-size: 15px;
+            line-height: 24px;
+            width: 345px;
+            margin-top: 20px;
+        };
+    }
+    &_items{
+        display: flex;
+        flex-wrap: wrap;
+        align-items:baseline;
+        padding: 0;
+        max-width: 1440px;
+        margin: 0 auto;
+        @media (min-width: 1200px) {
+            padding: 0 180px 0 180px;
+        };
+    
+
+        &_item{
+            display: block;
+            width: calc(100% / 3);
+            height: 250px;
+            margin-top: 50px;
+            padding: 0 15px 0 15px;
+            @media (max-width: 1200px) {
+                    width: calc(100% / 2); /* по два в строку */
+                };
+            &_img{
+                display: block;
+                margin: 0 auto;
+                @media (max-width: 767px) and (min-width: 200px) {
+                    width: 60%;
+                    height: 60%;
+                };
+            }
+            &_text{
+                margin-top: 45px;
+                color: #6D698C;
+                text-align: center;
+                font-family: "Faber Sans Pro";
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 24px;
+                @media (min-width: 768px) and (max-width:1199px) {
+    
+                };
+                @media (max-width: 767px) and (min-width: 200px) {
+                    font-size: 12px;
+                    line-height: 18px;
+                    margin-top: 20px;
+                };
+            }
+        }
+    }
+}

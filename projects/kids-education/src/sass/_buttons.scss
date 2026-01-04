@@ -1,0 +1,76 @@
+.button_call{
+    display: flex;
+    align-items:center;
+    width: 44px;
+    height: 50px;
+    border-radius: 15px 15px 15px 30px;
+    border:none;
+    background: #2DBC7C;
+    transition: all 0.5s;
+
+    @media (min-width: 768px) {
+        width: 183px;
+        margin-left:27px ;
+    };
+    @media (max-width: 767px) {
+        justify-content: center;
+        height: 46.5px;     
+    };
+    &:hover{
+        background: #EF584E;
+    };
+    .phone_logo{
+        
+        @media (min-width: 768px) {
+            margin-left:27px ;
+        };
+    }
+    .btn_text{
+        display: none;
+        @media (min-width: 768px) {
+            display: block;
+            margin-left:12px ;
+            width: 102px;
+            height: 30px;
+            color: #FFF;
+            text-align: center;
+            font-family: "Faber Sans Pro";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;
+        };
+        
+    }
+}
+
+.burger{
+    display: none;
+
+    @media (max-width: 1200px) and (min-width:768px) {
+        display: block;
+        margin-left: 20px;
+        width: 55px;
+        height: 52px;     
+    };
+    @media (max-width: 767px) {
+        display: block;
+        width: 44px;
+        height: 46.5px; 
+        margin-left: 8.3px; 
+    };
+    border: none;
+    z-index: 3;
+
+    border-radius: 5px 30px 5px 15px;
+    background-color: #FFCF3C;
+    transition: all 0.3s;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 44'%3E%3Cline x1='14.3958' y1='15.0769' x2='33.0111' y2='15.0769' stroke='%232D2D2D' stroke-width='2'/%3E%3Cline x1='14.3958' y1='22.6923' x2='33.0111' y2='22.6923' stroke='%232D2D2D' stroke-width='2'/%3E%3Cline x1='14.3958' y1='30.3077' x2='33.0111' y2='30.3077' stroke='%232D2D2D' stroke-width='2'/%3E%3C/svg%3E");
+    &-click {
+        background-position: center; 
+        background-repeat:no-repeat;
+        background-image: url('../icons/close.svg');
+      };
+      
+}
+

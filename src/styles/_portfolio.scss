@@ -1,0 +1,238 @@
+// =============================================================
+//  Проекты (карточки демо-макетов + мокап браузера)
+// =============================================================
+
+@use 'mixins' as *;
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+
+  @include tablet {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  @include desktop {
+    gap: 24px;
+  }
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  &__preview {
+    display: block;
+    border: 1px solid var(--border-soft);
+    border-radius: 14px;
+    background-color: #12151b;
+    overflow: hidden;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+
+    &:hover {
+      border-color: var(--border);
+      transform: translateY(-3px);
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  &__meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__type {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: var(--green);
+
+    @include tablet {
+      font-size: 12px;
+    }
+  }
+
+  &__demo {
+    font-size: 11px;
+    color: var(--text3);
+
+    @include tablet {
+      font-size: 12px;
+    }
+  }
+
+  &__title {
+    font-family: var(--font-head);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.25;
+
+    @include desktop {
+      font-size: 19px;
+    }
+  }
+
+  &__desc {
+    color: var(--text2);
+    font-size: 14px;
+    line-height: 1.55;
+
+    @include tablet {
+      font-size: 15px;
+    }
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: auto;
+    color: var(--green);
+    font-size: 14px;
+    font-weight: 600;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// =============================================================
+//  Мокап браузера (превью проекта)
+//  Акцентные цвета задаются переменными --accent / --accent-dark.
+// =============================================================
+
+.mock {
+  --accent: #32d66b;
+  --accent-dark: #12291f;
+  background-color: #12151b;
+
+  &__bar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    height: 28px;
+    padding: 0 12px;
+    background-color: #1b1f26;
+  }
+
+  &__dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+
+    &--red {
+      background-color: #ff5f57;
+    }
+
+    &--yellow {
+      background-color: #febc2e;
+    }
+
+    &--green {
+      background-color: #28c840;
+    }
+  }
+
+  &__url {
+    flex: 1;
+    height: 14px;
+    margin-left: 8px;
+    border-radius: 5px;
+    background-color: #14171c;
+  }
+
+  &__hero {
+    position: relative;
+    height: 100px;
+    background: linear-gradient(180deg, var(--accent-dark), #0e1013);
+  }
+
+  &__logo {
+    position: absolute;
+    top: 12px;
+    left: 14px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: var(--accent);
+  }
+
+  &__title {
+    position: absolute;
+    top: 38px;
+    left: 14px;
+    width: 130px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+  }
+
+  &__sub {
+    position: absolute;
+    top: 52px;
+    left: 14px;
+    width: 90px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: #8a909a;
+  }
+
+  &__btn {
+    position: absolute;
+    top: 64px;
+    left: 14px;
+    width: 60px;
+    height: 14px;
+    border-radius: 6px;
+    background-color: var(--accent);
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    padding: 8px 14px 14px;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding-bottom: 6px;
+    border-radius: 8px;
+    background-color: #171b21;
+    overflow: hidden;
+  }
+
+  &__card-img {
+    height: 25px;
+    background-color: var(--accent-dark);
+  }
+
+  &__card-t {
+    height: 4px;
+    width: 90%;
+    margin: 4px 7px 0;
+    border-radius: 2px;
+    background-color: #d7dce3;
+  }
+
+  &__card-p {
+    height: 4px;
+    width: 80%;
+    margin: 0 7px;
+    border-radius: 2px;
+    background-color: var(--accent);
+  }
+}

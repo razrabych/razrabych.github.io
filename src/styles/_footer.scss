@@ -1,0 +1,184 @@
+// =============================================================
+//  Подвал
+// =============================================================
+
+@use 'mixins' as *;
+
+.site-footer {
+  background-color: var(--footer-bg);
+  padding-top: 48px;
+  padding-bottom: 24px;
+
+  @include desktop {
+    padding-top: 72px;
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 40px;
+
+    @include tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 48px;
+    }
+
+    @include desktop {
+      flex-wrap: nowrap;
+      gap: 64px;
+    }
+  }
+
+  &__brand {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    max-width: 360px;
+
+    @include tablet {
+      flex: 0 0 100%;
+      max-width: none;
+    }
+
+    @include desktop {
+      flex: 0 0 360px;
+      max-width: 360px;
+    }
+
+    img {
+      width: auto;
+      height: 32px;
+      align-self: flex-start;
+    }
+  }
+
+  &__desc {
+    color: var(--text2);
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border-soft);
+
+    @include tablet {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__copy {
+    color: var(--text3);
+    font-size: 14px;
+  }
+
+  &__legal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    a {
+      color: var(--text3);
+      font-size: 14px;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: var(--text);
+      }
+    }
+  }
+}
+
+// Колонки ссылок
+.footer-col {
+  @include tablet {
+    flex: 1 1 0;
+    min-width: 160px;
+  }
+
+  &__title {
+    margin-bottom: 14px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: var(--text3);
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text2);
+    font-size: 14px;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: var(--text);
+    }
+
+    .icon {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &__muted {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text3);
+    font-size: 14px;
+
+    .icon {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+// Соцсети
+.social {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-pill);
+  background-color: var(--surface2);
+  border: 1px solid var(--border-soft);
+  padding: 4px;
+  color: var(--text2);
+  transition: color 0.2s ease, border-color 0.2s ease;
+
+  &:hover {
+    color: var(--green);
+    border-color: var(--border);
+  }
+
+  .icon {
+    display: block;
+    margin: auto;
+    width: 17px;
+    height: 17px;
+  }
+}

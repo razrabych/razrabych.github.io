@@ -1,0 +1,105 @@
+@media (min-width: 768px) and (max-width:1199px) {
+    
+};
+@media (max-width: 767px) and (min-width: 200px) {
+    
+
+};
+
+.instructions{
+    background-color: #F5F4FF;
+    
+    &_container{
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        padding-top: 29px;
+        max-width: 1440px;
+        align-items:center;
+        @media (min-width: 768px) and (max-width:1199px) {
+            flex-direction: column;
+            align-items: center;
+            padding-top: 64px;
+        };
+        @media (max-width: 767px) and (min-width: 200px) {
+            flex-direction: column;
+            padding-top: 51px;
+        };
+    }
+    &_header{
+        color: #2D2D2D;
+        text-align: center;
+        font-family: Directo;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 46px;
+        margin: 0 auto;
+        @media (min-width: 768px) and (max-width:1199px) {
+            width: 738px;
+            
+        };
+        @media (max-width: 767px) and (min-width: 200px) {
+            width: 345px;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px;
+        
+        };
+    }
+    &_img{
+        width: 629px;
+        height: 629px;
+        @media (min-width: 768px) and (max-width:1199px) {
+            width: 586px;
+            height: 555px;
+            margin: 0 auto;
+
+        };
+        @media (max-width: 767px) and (min-width: 200px) {
+            width: 313px;
+            height: 297px;
+            margin: 0 auto;
+
+        };
+    }
+    &_text{
+        // width: 558px;
+        margin-left: 22px;
+        &_header{
+            width: 538px;
+            margin-top: -33px;
+            color: #2D2D2D;
+            font-family: Directo;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 50px;
+        }
+        &_description{
+            width: 543px;
+            color: #6D698C;
+            font-family: "Faber Sans Pro";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;
+            @media (min-width: 768px) and (max-width:1199px) {
+                width: 626px;
+                height: 247px;
+                margin-top: 27px;
+            };
+            @media (max-width: 767px) and (min-width: 200px) {
+                margin: 0 auto;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                margin-top: 35px;
+                width: 345px;
+                
+            };
+        }
+    }
+}

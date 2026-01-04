@@ -1,0 +1,252 @@
+.header{
+    position: relative;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+}
+
+.line{
+    display: none;
+    margin: 0;
+    color:#F5F4FF;
+    @media (min-width: 1200px) {
+        display: block;
+    };
+}
+    .header_main{
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 90px;
+        width: 100%;
+        @media (min-width: 1200px) {
+            width: 1148px;
+        };
+        @media (max-width: 1199px) {
+            padding: 0 15px 0 15px;
+        };
+        @media (max-width: 767px) {
+            padding: 0 16px 0 16px;
+        };
+    }
+
+    .header_left{
+        display: flex;
+
+        &-logo {
+            display: flex;
+            align-items: center;
+        }
+
+        &-logo .logo_img {
+            height: 40px;
+            width: auto;
+            display: block;
+        }
+
+
+        &-description{
+            margin-top: 9px;
+            color: #AFACC9;
+            font-family: "Faber Sans Pro";
+            font-style: light;
+            font-size: 13px;
+            font-weight: 300;
+            line-height: 18px; /* 138.462% */
+
+            @media (min-width: 1200px) {
+                margin-left: 41px;
+            };
+            @media (min-width: 768px) {
+                margin-left: 27px;
+            };
+            @media (min-width: 300px) {
+                margin-left: 22px;
+            };
+
+        }
+    }
+
+
+    .header_center{
+        @media (max-width: 767px) {
+            display: none;
+        };
+        display: flex;
+        margin-top: 20px;
+        // align-items:center;
+        &-logos{
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            align-items:center;
+            .visible_1200{
+                display: none;
+                @media (min-width: 1200px) {
+                    display: block;
+                };
+            }
+            &-item{
+
+                margin: 3.5px;
+
+            }
+            &-item-link{
+                padding: 12px;
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                width: 40px;
+                height: 40px;
+                border-radius: 12px;
+                border: 1px solid #E1DEFC;
+                transition: all 0.5s;
+
+                &:hover{
+                    background: #5B45FF;
+                };
+            }
+
+            &-item-link_1{
+                content:url("../icons/instagram-def.svg");
+                &:hover{
+                    content:url("../icons/instagram-act.svg");
+                }
+            }
+            &-item-link_2{
+                content:url("../icons/youtube-def.svg");
+                &:hover{
+                    content:url("../icons/youtube-act.svg");
+                }
+            }
+            &-item-link_3{
+                content:url("../icons/facebook-def.svg");
+                &:hover{
+                    content:url("../icons/facebook-act.svg");
+                }
+            }
+            &-item-link_4{
+                content:url("../icons/vk-def.svg");
+                &:hover{
+                    content:url("../icons/vk-act.svg");
+                }
+            }
+            &-item-link_5{
+                content:url("../icons/whatsapp-def.svg");
+                &:hover{
+                    content:url("../icons/whatsapp-act.svg");
+                }
+            }
+            &-item-link_6{
+                content:url("../icons/telegram-def.svg");
+                &:hover{
+                    content:url("../icons/telegram-act.svg");
+                }
+            }
+            &-item-link_7{
+                content:url("../icons/viber-def.svg");
+                &:hover{
+                    content:url("../icons/viber-act.svg");
+                }
+            }
+
+        }
+    }
+
+    .header_right{
+        display: flex;
+        .phone_number{
+            display: none;
+            @media (min-width: 1200px) {
+                display: block;
+            };
+            margin-right: 28px;
+            height: 52px;
+            width: 176px;
+            text-decoration: none;
+            color: #2D2D2D;
+            font-family: "Directo";
+            font-size: 20px;
+            // font-style: bold;
+            font-weight: 700;
+            line-height: 52px; /* 260% */
+        }
+    }
+
+    .subheader{
+        display: none;
+        height: 55px;
+        @media (min-width: 1200px) {
+            display: flex;
+            align-items:center;
+        };
+        &_list{
+            display: flex;
+            justify-content: space-between;
+
+            list-style-type: none;
+            margin: 0 auto;
+            padding: 0;
+            width: 1097px;
+            height: 30px;
+            &_item{
+                &_link{
+                    text-decoration: none;
+                    color: #8682A7;
+                    font-family: "Faber Sans Pro";
+                    font-size: 16px;
+                    // font-style: normal;
+                    font-weight: 700;
+                    line-height: 30px; /* 187.5% */
+                    transition: all 0.2s;
+
+                    &:hover{
+                        color: #513CF3;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .burger_menu{
+        display: none;
+
+        &-active{
+            display: block;
+        }
+        position: absolute;
+        left: 100%;
+        transform: translateX(calc(-100% - 15px));
+        margin-right: 15px;
+        margin-top: 93px;
+        width: 256px;
+        height: 340px;
+        background-color: #fff;
+        &_list{
+            margin-top: 20px;
+            margin-left: 48px;
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            padding: 0;
+            &_item{
+                margin-top: 20px;
+                &_link{
+                    text-decoration: none;
+                    color: #8682A7;
+                    font-family: "Faber Sans Pro";
+                    font-size: 16px;
+                    // font-style: normal;
+                    font-weight: 700;
+                    line-height: 30px; /* 187.5% */
+                    &:hover{
+                        color: #513CF3;
+                    }
+                }
+            }
+        }
+    }

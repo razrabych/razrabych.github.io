@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Разрабыч — демо-проекты сайтов для бизнеса. Готовые макеты лендингов и многостраничных сайтов." />
+  <title>Разрабыч — демо-проекты сайтов для бизнеса</title>
+
+  <link rel="icon" href="./favicon/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="./favicon/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@600;700&family=Unbounded:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="site-header__logo" href="#" aria-label="Разрабыч — на главную">
+        <img src="./img/image-10.png" alt="Разрабыч" width="144" height="48" />
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="#projects">Проекты</a></li>
+          <li><a class="site-nav__link" href="#hero">О сайте</a></li>
+          <li><a class="site-nav__link" href="#projects">Демо</a></li>
+          <li><a class="site-nav__link" href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-header__actions">
+        <a class="btn btn--yellow btn--sm" href="#projects">Смотреть демо</a>
+        <button class="site-header__burger" id="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="site-nav">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="eyebrow-badge">
+            <span class="eyebrow-badge__dot"></span>
+            10 готовых демо-проектов
+          </span>
+
+          <h1 class="hero__title">Сайт с демо-проектами</h1>
+
+          <p class="hero__desc">
+            Это портфолио готовых макетов — демо-версии сайтов для разных сфер бизнеса. Посмотрите,
+            как может выглядеть сайт салона красоты, барбершопа, клиники или строительной компании.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--green" href="#projects">Смотреть проекты <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M15 16l4-4"/><path d="M15 8l4 4"/></svg></a>
+            <a class="btn btn--outline" href="https://t.me/razrabych" target="_blank" rel="noopener">Обсудить проект</a>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <img src="./img/Pepe Frog Neon Coding Setup.png" alt="Разрабыч — демо-проекты" width="1536" height="1024" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Проекты -->
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">Проекты</span>
+          <h2 class="section__title">Реализованные демо-макеты</h2>
+          <p class="section__sub">
+            Десять демо-проектов для разных сфер бизнеса — от салона красоты до строительной компании.
+            Каждый макет показывает структуру и дизайн будущего сайта.
+          </p>
+        </div>
+
+        <div class="projects" id="projects-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contacts">
+    <div class="container">
+      <div class="site-footer__top">
+        <div class="site-footer__brand">
+          <img src="./img/image-10.png" alt="Разрабыч" width="144" height="48" />
+          <p class="site-footer__desc">Демо-проекты сайтов для бизнеса. Понятно, наглядно и без лишней сложности.</p>
+          <div class="site-footer__socials">
+            <a class="social" href="https://t.me/razrabych" aria-label="Telegram" target="_blank" rel="noopener">
+              <img src="icons/social/telegram.svg" alt="mail" class="icon" />
+            </a>
+            <a class="social" href="https://max.ru/u/f9LHodD0cOKQkydMhp9hH9woYXc9PsqMrkP6bMME9HGMB4Wfoy63ZUBRCVA" aria-label="Макс" target="_blank" rel="noopener">
+              <img src="icons/social/max.svg" alt="mail" class="icon"/>
+            </a>
+          </div>
+        </div>
+
+        <nav class="footer-col" aria-label="Проекты">
+          <h3 class="footer-col__title">Проекты</h3>
+          <ul>
+            <li><a href="#projects">Студия красоты</a></li>
+            <li><a href="#projects">Барбершоп</a></li>
+            <li><a href="#projects">Ремонт квартир</a></li>
+            <li><a href="#projects">Клининговая компания</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-col" aria-label="Навигация">
+          <h3 class="footer-col__title">Навигация</h3>
+          <ul>
+            <li><a href="#projects">Проекты</a></li>
+            <li><a href="#hero">О сайте</a></li>
+            <li><a href="#projects">Демо</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-col">
+          <h3 class="footer-col__title">Контакты</h3>
+          <ul>
+            <li>
+              <a href="https://t.me/razrabych" target="_blank" rel="noopener">
+                <img src="icons/social/telegram.svg" alt="mail" width="24" height="24"/>
+                @razrabych
+              </a>
+            </li>
+            <li>
+              <a href="mailto:razrabych@gmail.com">
+                <img src="icons/social/mail.svg" alt="mail" width="24" height="24"/>
+                razrabych@gmail.com
+              </a>
+            </li>
+            <li class="footer-col__muted">
+              <img src="icons/perks/clock.svg" alt="mail" width="24" height="24"/>
+              Отвечаю в течение дня
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <p class="site-footer__copy">&copy; 2026 Разрабыч</p>
+        <div class="site-footer__legal">
+<!--          <a href="#">Политика конфиденциальности</a>-->
+<!--          <a href="#">Оферта</a>-->
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./projects/projects.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

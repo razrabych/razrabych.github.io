@@ -1,0 +1,35 @@
+// =============================================================
+//  Дизайн-токены (из Penpot: untitled.pen)
+//  Здесь меняются цвета и шрифты всего сайта.
+// =============================================================
+
+:root {
+  // Цвета
+  --bg: #111318;
+  --bg2: #1a1d24;
+  --surface: #171a20;
+  --surface2: #1e222a;
+  --border: #30343d;
+  --border-soft: #262b33;
+  --text: #f5f5f5;
+  --text2: #a5aab4;
+  --text3: #6e7683;
+  --green: #32d66b;
+  --green-deep: #12291f;
+  --yellow: #ffd928;
+  --warm: #ffb84d;
+  --ink: #14181d;
+  --footer-bg: #0c0e12;
+
+  // Шрифты
+  --font-head: 'Unbounded', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  // Радиусы
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 24px;
+  --radius-xl: 28px;
+  --radius-pill: 999px;
+}

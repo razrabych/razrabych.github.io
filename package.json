@@ -1,0 +1,13 @@
+{
+  "name": "razrabych-github",
+  "version": "1.0.0",
+  "description": "Сайт-витрина «Разрабыч» для GitHub Pages (SCSS + статический HTML/JS)",
+  "type": "module",
+  "scripts": {
+    "build": "sass src/styles/main.scss css/style.css --style=compressed --no-source-map",
+    "watch": "sass --watch src/styles/main.scss css/style.css --style=compressed --no-source-map"
+  },
+  "devDependencies": {
+    "sass": "^1.77.8"
+  }
+}

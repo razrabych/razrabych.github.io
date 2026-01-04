@@ -1,0 +1,36 @@
+   
+    @font-face {
+        font-weight: 700; /* Соответствует значению bold */
+        font-family: "Directo";
+        src: url("../fonts/Directo-Bold.ttf");
+      }
+      @font-face {
+        font-weight: 400; /* Соответствует значению normal */
+        font-family: "Directo";
+        src: url("../fonts/Directo.ttf");
+      }
+
+      @font-face {
+        font-weight: 300; /* Соответствует значению light */
+        font-family: "Directo";
+        src: url("../fonts/Directo-Light.ttf");
+      }
+
+
+
+      @font-face {
+        font-weight: 700; /* Соответствует значению bold */
+        font-family: "Faber Sans Pro";
+        src: url("../fonts/FaberSansPro-Kraeftig.ttf");
+      }
+      @font-face {
+        font-weight: 400; /* Соответствует значению normal */
+        font-family: "Faber Sans Pro";
+        src: url("../fonts/FaberSansPro-Normal.ttf");
+      }
+
+      @font-face {
+        font-weight: 300; /* Соответствует значению light */
+        font-family: "Faber Sans Pro";
+        src: url("../fonts/FaberSansPro-Leicht.ttf");
+      }

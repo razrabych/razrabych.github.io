@@ -1,0 +1,49 @@
+// =============================================================
+//  Кнопки
+// =============================================================
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 15px 24px;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+
+  &:hover {
+    opacity: 0.88;
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+
+  &--sm {
+    padding: 12px 22px;
+  }
+
+  &--yellow {
+    background-color: var(--yellow);
+    color: var(--ink);
+  }
+
+  &--green {
+    background-color: var(--green);
+    color: #0e2414;
+  }
+
+  &--outline {
+    border: 1.5px solid var(--border);
+    color: var(--text);
+    background-color: transparent;
+  }
+
+  &--full {
+    width: 100%;
+  }
+}
