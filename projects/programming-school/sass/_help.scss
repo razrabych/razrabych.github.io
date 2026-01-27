@@ -1,0 +1,161 @@
+@media (min-width: 768px) and (max-width:1199px) {
+};
+@media (max-width: 767px) and (min-width: 200px) {
+};
+.help{
+    background: rgb(249, 248, 253);
+    overflow: visible;
+ padding: 91px 0 89px 0;
+ @media (max-width: 767px) and (min-width: 200px) {
+    background: #fff;
+    border-radius:30px;
+    padding: 10px 0 10px 0;
+ };
+ &_title{
+    color: rgb(34, 37, 59);
+    font-family: Gilroy-SemiBold;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+    @media (min-width: 768px) and (max-width:1199px) {
+        font-size: 25px;
+        line-height: 23px;
+    };
+    @media (max-width: 767px) and (min-width: 200px) {
+        font-size: 20px;
+        line-height: 19px;
+    };
+ }
+ &_description{
+    color: rgb(34, 37, 59);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 18px;
+    @media (min-width: 768px) and (max-width:1199px) {
+        font-size: 14px;
+        line-height: 15px;
+    };
+    @media (max-width: 767px) and (min-width: 200px) {
+        font-size: 12px;
+        line-height: 17px;
+    margin-top: 15px;
+    };
+ }
+&_grid{
+    max-width: 1161px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    row-gap: 30px;
+    column-gap:30px;
+    flex-wrap: wrap;
+    @media (min-width: 768px) and (max-width:1199px) {
+        max-width: 650px;
+        width: 100%;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    };
+    @media (max-width: 767px) and (min-width: 200px) {
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        justify-content: center;
+        align-items:center;
+        max-width: 100%;
+        flex-direction: column;
+    };
+    &_item{
+        border-radius: 40px;
+        background: rgb(234, 242, 245);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        &:nth-child(1){
+            width: 401px;
+            height: 313px;
+            .help_img_double_programing{
+                width: 271px;
+                height: 231px;
+            }
+            @media (min-width: 200px) and (max-width:1199px) {
+                max-width: 300px;
+                width: 100%;
+                height: 243px;
+                .help_img_double_programing{
+                    width: 205px;
+                    height: 175px;
+                }
+            };
+        };
+        &:nth-child(2){
+            height: 313px;
+            align-items: flex-start;
+            padding: 0 100px 0 100px;
+            max-width: 730px;
+            width: 100%;
+            @media (min-width: 200px) and (max-width:1199px) {
+                max-width: 300px;
+                width: 100%;
+                height: 243px;
+                padding: 0 20px 0 20px;
+            };
+            @media (max-width: 767px) and (min-width: 200px) {
+            };
+            .help_description{
+                max-width: 549px;
+                    width: 100%;
+                &:nth-child(2){
+                    max-width: 435px;
+                    width: 100%;
+                };
+                @media (min-width: 768px) and (max-width:1199px) {
+                };
+                @media (max-width: 767px) and (min-width: 200px) {
+                };
+            }
+        };
+        &:nth-child(3){
+            height: 290px;
+            max-width: 730px;
+            width: 100%;
+            align-items: flex-start;
+            padding: 0 100px 0 100px;
+            @media (min-width: 200px) and (max-width:1199px) {
+                max-width: 300px;
+                width: 100%;
+                height: 243px;
+                padding: 0 20px 0 20px;
+            };
+            @media (max-width: 767px) and (min-width: 200px) {
+                order:1;
+            };
+        };
+        &:nth-child(4){
+            width: 400px;
+            height: 290px;
+            .help_img_coding{
+                width: 258px;
+                height: 259px;
+                .help_description{
+                    max-width: 500px;
+                        width: 100%;
+                    };
+            }
+            @media (min-width: 200px) and (max-width:1199px) {
+                max-width: 300px;
+                width: 100%;
+                height: 243px;
+                .help_img_coding{
+                    width: 206px;
+                    height: 207px;
+                }
+            };
+        };
+    }
+}
+}

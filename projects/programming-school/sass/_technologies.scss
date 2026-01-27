@@ -1,0 +1,170 @@
+@media (min-width: 768px) and (max-width:1199px) {
+};
+@media (max-width: 767px) and (min-width: 200px) {
+};
+.technologies{
+    &_header{
+        margin-top: 53px;
+    }
+    &_img{
+        display: flex;
+        margin-top: 45px;
+        width: 407.082px;
+        height: 352.854px;
+    }
+    &_block{
+        margin: 0 auto;
+        max-width: 1160px;
+        width: 100%;
+        height: 396px;
+        border-radius: 48px;
+        background: #EAF2F5;
+        display: flex;
+        justify-content: center;
+        column-gap: 59px; 
+        margin-top: 35px;
+        @media (min-width: 768px) and (max-width:1199px) {
+            width: 80%;
+        };
+        @media (max-width: 767px) and (min-width: 200px) {
+            height: 301px;
+            margin-top: 22px;
+        };
+    }
+    &_content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @media (min-width: 768px) and (max-width:1199px) {
+            width: 90%;
+            align-items:center;
+        };
+        @media (max-width: 767px) and (min-width: 200px) {
+            justify-content: flex-start;
+        };
+    }
+    .techologies_grid_description{
+        color: #22253B;
+        margin-top: 26px;
+        font-family: 'Gilroy-SemiBold';
+        font-size: 20px;
+        font-weight: 900;
+        line-height: 25px;
+    }
+    &_grid{
+        display: flex;
+        width: 500px;
+        flex-wrap: wrap;
+        row-gap: 10px; 
+        column-gap:10px;
+        align-items:center;
+        @media (min-width: 768px) and (max-width:1199px) {
+            column-gap: none;
+            margin-top: 17px;
+            align-items: flex-start;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        };
+        @media (max-width: 767px) and (min-width: 200px) {
+            column-gap: 0;
+            margin-top: 17px;
+            width: 267px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        };
+        &_item{
+            height: 45.133px; 
+            border-radius: 44px;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            color: #FFF;
+            text-align: center;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 46px;
+            @media (min-width: 768px) and (max-width:1199px) {
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 46px;
+                width: 100%;
+            };
+            @media (max-width: 767px) and (min-width: 200px) {
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 46px;
+                max-width: 267px;
+                width: 100%;
+            };
+            &_python{
+                background: #5096FF;
+                width: 311px;
+                @media (min-width: 200px) and (max-width:1199px) {
+                    width: 100%;
+                };
+            }
+            &_webs{
+                background: #FFB359;
+                width: 89px;
+                @media (min-width: 200px) and (max-width:767px) {
+                    max-width: 99px;
+                    width: 100%;
+                };
+                @media (min-width: 768px) and (max-width:1199px) {
+                    width: 49%;
+                };
+            }
+            &_data-bases{
+                background: #FF6F50;
+                width: 151px;
+                @media (min-width: 200px) and (max-width:767px) {
+                    max-width: 160px;
+                    width: 100%;
+                };
+                @media (min-width: 768px) and (max-width:1199px) {
+                    width: 49%;
+                };
+            }
+            &_flasc{
+                background: #4BD071;
+                width: 277px;
+                @media (min-width: 200px) and (max-width:1199px) {
+                    width: 100%;
+                };
+            }
+            &_test{
+                background: #50C0FF;
+                width: 258px;
+                @media (min-width: 200px) and (max-width:1199px) {
+                    width: 100%;
+                };
+            }
+            &_docker{
+                background: #4B77B9;
+                width: 95px;
+                @media (min-width: 200px) and (max-width:767px) {
+                    max-width: 129px;
+                    width: 100%;
+                };
+                @media (min-width: 768px) and (max-width:1199px) {
+                    width: 49%;
+                };
+            }
+            &_git{
+                background: #AF93FF;
+                width: 93px;
+                @media (min-width: 200px) and (max-width:767px) {
+                    max-width: 129px;
+                    width: 100%;
+                };
+                @media (min-width: 768px) and (max-width:1199px) {
+                    width: 49%;
+                };
+            }
+        }
+    }
+}

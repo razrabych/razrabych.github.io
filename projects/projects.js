@@ -28,6 +28,16 @@ const PROJECTS = [
     accentDark: '#3A1E5C',
   },
   {
+    slug: 'programming-school',
+    title: 'Школа программирования',
+    type: 'Лендинг',
+    summary: 'Лендинг школы программирования: технологии, методика обучения, стоимость и запись на курс.',
+    demo: 'projects/programming-school/index.html',
+    image: 'projects/programming-school/img.png',
+    accent: '#F15525',
+    accentDark: '#22253B',
+  },
+  {
     slug: 'beauty-studio',
     title: 'Студия красоты',
     type: 'Сайт для бизнеса',

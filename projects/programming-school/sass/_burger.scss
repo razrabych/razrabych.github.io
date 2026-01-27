@@ -1,0 +1,81 @@
+.burger{
+    display: none;
+    &_active{
+        display: flex;
+        position:fixed;
+        top: 0;
+        z-index: 99;
+        width: 100%;
+        height: 100vh;
+        justify-content:end;
+    }
+    background: rgba(25, 26, 38, 0.9);
+    &_content{
+        position: relative;
+        margin-top: 20px;
+        margin-right: 15px;
+        width: 80%;
+        border-radius: 20px;
+        background: rgb(255, 255, 255);
+        height: 576px;
+        .burger_close{
+            position: absolute;
+            top: 25px;
+            right: 18px;
+            background-color: #fff;
+            border: none;
+        }
+        .burger_list{
+            margin-top: 53px;
+            list-style-type: none;
+            .burger_text{
+                height: 40px;
+                display: flex;
+                align-items: center;
+                &_link{
+                    text-decoration: none;
+                    color: rgb(34, 37, 59);
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    text-align: left;
+                    transition: 0.3s ;
+                    &:hover{
+                        color:#F15525;
+                    }
+                }
+            }
+        }
+        .burger_login{
+            position: absolute;
+            bottom: 34px;
+            left: 31px;
+            border: none;
+            width: 132.86px;
+            height: 49px;
+            border-radius: 34px;
+            background: #38BFF2;
+            transition: 0.5s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        &:hover{
+            background: #F15525;
+        }
+        &_img{
+            width: 14.63px;
+            height: 12.55px;
+        }
+        &_text{
+            margin-left: 4px;
+            color: #FFF;
+            font-family: gilroy-regular;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 104.4%;
+        }
+        }
+    }
+}
