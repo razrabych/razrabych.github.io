@@ -18,6 +18,16 @@
 
 const PROJECTS = [
   {
+    slug: 'gta6',
+    title: 'GTA VI — лендинг в стиле Rockstar',
+    type: 'Лендинг',
+    summary: 'Анимированный лендинг в стиле GTA 6: кинематографичные секции и эффекты.',
+    demo: 'projects/gta6/index.html',
+    image: 'projects/gta6/img.jpg',
+    accent: '#FFB0C4',
+    accentDark: '#13131C',
+  },
+  {
     slug: 'kids-education',
     title: 'Лендинг онлайн-школы — обучение детей',
     type: 'Лендинг',
